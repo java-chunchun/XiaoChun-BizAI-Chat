@@ -1,0 +1,52 @@
+# ── Python 缓存 ──
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# ── 虚拟环境 ──
+venv/
+.venv/
+env/
+
+# ── 向量数据库（运行时自动生成，含本地路径信息）──
+data/vector_db/
+data/vector_db_v2/
+
+# ── IDE & 编辑器 ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── Claude Code ──
+.claude/
+
+# ── 面试/简历相关文件（非项目文件）──
+docs/简历面试指南.txt
+docs/*面试*
+docs/*简历*
+
+# ── Claude Code 内部计划文件 ──
+docs/superpowers/
+
+# ── 测试缓存 ──
+.pytest_cache/
+
+# ── 环境变量（绝对不能提交）──
+.env
+deploy/.env
+*.env
+!deploy/.env.example
+
+# ── 日志 ──
+*.log
+logs/
+
+# ── 系统文件 ──
+.DS_Store
+Thumbs.db
+desktop.ini

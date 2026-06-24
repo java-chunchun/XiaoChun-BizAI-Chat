@@ -1,0 +1,60 @@
+# ============================================
+# 项目依赖文件
+# 安装命令: pip install -r requirements.txt
+# ============================================
+
+# ---------- LangChain 核心库 ----------
+# LangChain 主框架，提供Agent、Chain、Memory等核心组件
+langchain>=0.2.14,<0.4
+
+# LangChain OpenAI集成，提供ChatOpenAI和OpenAIEmbeddings
+langchain-openai>=0.1.21,<0.4
+
+# LangChain 社区组件，包含Chroma等向量数据库集成
+langchain-community>=0.2.10,<0.4
+
+# ---------- 向量数据库 ----------
+# ChromaDB，轻量级本地向量数据库，适合中小规模应用
+chromadb>=0.5.5,<0.7
+
+# LangChain Chroma 集成（langchain >= 1.0 需要）
+langchain-chroma>=0.1.0,<0.3
+
+# ---------- 本地 Embedding（免费方案，无需 API）----------
+# HuggingFace Embedding 集成
+langchain-huggingface>=0.1.0,<1
+
+# 本地运行 Embedding 模型（bge-small-zh-v1.5, 仅 95MB）
+sentence-transformers>=3.0.0,<4
+
+# ---------- OpenAI API ----------
+# OpenAI官方客户端
+openai>=1.40.0,<2
+
+# ---------- 数据处理 ----------
+# 数据验证和序列化
+pydantic>=2.7.0,<3
+
+# ---------- Web服务 ----------
+# FastAPI框架，用于构建API服务
+fastapi>=0.111.0,<0.116
+
+# ASGI服务器
+uvicorn>=0.29.0,<0.35
+
+# ---------- 测试 ----------
+# 单元测试框架
+pytest>=8.2.0,<9
+
+# 测试覆盖率
+pytest-cov>=5.0.0,<7
+
+# ---------- 工具库 ----------
+# 环境变量管理
+python-dotenv>=1.0.0,<2
+
+# 类型提示支持
+typing-extensions>=4.11.0,<5
+
+# HTTP客户端（用于重试机制与异步支持）
+httpx>=0.27.0,<1
